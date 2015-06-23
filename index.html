@@ -1,1 +1,38 @@
-data:text/html, <style type="text/css">#e{position:absolute;top:0;right:0;bottom:0;left:0;}</style><div id="e"></div><script src="http://d1n0x3qji82z53.cloudfront.net/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script><script>var e=ace.edit("e");e.setTheme("ace/theme/monokai");e.getSession().setMode("ace/mode/ruby");</script>
+<html>
+  <head>
+    <title> Scrap Paper | When you need a quick piece of paper</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Scrap Paper... When you need a space to quickly jot down notes.">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8">
+  </head>
+  <body>
+
+  <div id="container">
+    <nav id="navig">
+      <div class="nav-button"><a>&nbsp;<i class="fa fa-bars fa-lg"></i>&nbsp;</a></div>
+        <div class="items">
+          <div class="blog"><a href="http://www.github.com/leahjs" target="=_blank">&nbsp;<i class="fa fa-pencil fa-lg"></i>&nbsp;</a></div>
+
+          <div class="github"><a href="https://github.com/leahjs/scrap-paper" target="_blank">&nbsp;<i class="fa fa-github fa-lg"></i>&nbsp;</a></div>
+        </div>
+    </nav>
+
+    <textarea id="note" placeholder="This is Scratch. A convient notepad on the web."></textarea>
+  </div> <!-- #navig -->
+    
+  </body>
+</html>
+
+<script>
+var n = document.getElementById(“note”);
+var s = function(){localStorage.setItem(“note”, n.value);}
+if(window.localStorage){ 
+     n.value = localStorage.getItem(“note”);
+}
+  n.onchange = s();
+  setInterval( s, 500);
+  window.onunload = s();
+</script>
+
