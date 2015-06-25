@@ -47,11 +47,11 @@ textarea#note {
   text-decoration: none;
   color: black;
   padding-left: 8px;
-  top: 30px;
+  padding-top: 30px;
   font-size: 90%;
 }
 .about:hover {
-  color: #f5f5f5;
+  color: #blue;
 }
 
 /*********************************************
@@ -154,48 +154,11 @@ blockquote {
   color: #fafafa;
 }
 
-.ui {
-  position: fixed;
-  padding: 20px;
-  width: 65px;
-  bottom: 0px;
-  left: 0px;
-  top: 0px;
-}
-
-.ui:hover button {
-  opacity: 0.4;
-}
-
-.ui button:hover {
-  opacity: 1;
-}
-
-.ui button, .text-options button {
-
-  -webkit-transition: opacity 400ms;
-  -moz-transition: opacity 400ms;
-  -ms-transition: opacity 400ms;
-  -o-transition: opacity 400ms;
-  transition: opacity 400ms;
-
-  font-family: inherit;
-  background: none;
-  cursor: pointer;
-  font-size: 25px;
-  color: inherit;
-  opacity: 0.1;
-  padding: 0px;
-  height: 32px;
-  width: 25px;
-  border: 0px;
-}
-
 a {
   text-decoration: none;
   color: black;
-  left: 8px;
-  top: 15px;
+/*  left: 8px;
+  top: 15px;*/
 }
 
 a:hover {
