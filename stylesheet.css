@@ -43,6 +43,13 @@ textarea#note {
   color: black;
 }
 
+.about {
+  text-decoration: none;
+  color: black;
+  left: 8px;
+  top: 15px;
+}
+
 /*********************************************
  * BASE STYLES
  *********************************************/
@@ -182,7 +189,7 @@ blockquote {
 
 a {
   text-decoration: none;
-  color: #f3f3f3;
+  color: black;
   left: 8px;
   top: 15px;
 }
