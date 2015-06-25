@@ -3,20 +3,20 @@
     <title> Scrap Paper | When you need a quick piece of paper</title>
     <meta charset="utf-8">
     <meta name="description" content="Scrap Paper... When you need a space to quickly jot down notes.">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8">
+   <!-- <link href="stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8">-->
   </head>
   <body>
 
   <div id="container">
-    <nav id="navig">
+    <!--<nav id="navig">
       <div class="nav-button"><a>&nbsp;<i class="fa fa-bars fa-lg"></i>&nbsp;</a></div>
         <div class="items">
           <div class="blog"><a href="http://www.github.com/leahjs" target="=_blank">&nbsp;<i class="fa fa-pencil fa-lg"></i>&nbsp;</a></div>
 
           <div class="github"><a href="https://github.com/leahjs/scrap-paper" target="_blank">&nbsp;<i class="fa fa-github fa-lg"></i>&nbsp;</a></div>
-        </div>
+        </div>-->
     </nav>
 
   </div> <!-- end of #navig -->
@@ -24,14 +24,14 @@
       <header contenteditable="true" class="header">Consider me as Scrap Paper</header>
 
       <article contenteditable="true" class="content">
-        <p>Have something quick to jot down...</p>
-        <textarea id="note" placeholder="Jot it down here"></textarea>
+        <p>Have something quick to jot down... - Edit the text and click to save for next time</p>
 
       </article>
     </section>
     
   </body>
 </html>
+
 
 <script>
 var n = document.getElementById(“note”);
@@ -43,4 +43,5 @@ if(window.localStorage){
   setInterval( s, 500);
   window.onunload = s();
 </script>
+
 
