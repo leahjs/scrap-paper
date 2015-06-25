@@ -55,6 +55,7 @@ body {
   padding-top: 20px;
   min-width: 800px;
   width: 100%;
+  background-color: #f3f3f3;
 
   -webkit-transition: all 600ms;
   -moz-transition: all 600ms;

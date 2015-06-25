@@ -18,6 +18,12 @@
           <div class="github"><a href="https://github.com/leahjs/scrap-paper" target="_blank">&nbsp;<i class="fa fa-github fa-lg"></i>&nbsp;</a></div>
         </div>-->
     </nav>
+  <div id="corner">
+    <a href="javascript:toggleLayer('descr');">About</a>
+  </div>
+
+  <div id="descr">Sometimes in life you just need a piece of scrap paper which is why I made this editable page so you can write what you want and it will save the data in the browser.
+  </div>
 
   </div> <!-- end of #navig -->
     <section>
@@ -44,4 +50,20 @@ if(window.localStorage){
   window.onunload = s();
 </script>
 
+
+
+<script type="text/javascript">
+function toggleLayer(whichLayer) {
+  var elem, vis;
+  if(document.getElementById)
+    elem = document.getElementById(whichLayer);
+  else if(document.all)
+      elem = document.all[whichLayer];
+  else if(document.layers)
+    elem = document.layers[whichLayer];
+  vis = elem.style;
+  if(vis.display==''&&elem.offsetWidth!=undefined&&elem.offsetHeight!=undefined)
+    vis.display = (elem.offsetWidth!=0&&elem.offsetHeight!=0)?'block':'none';
+  vis.display = (vis.display==''||vis.display=='block')?'none':'block';
+} </script>
 
