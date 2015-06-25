@@ -36,7 +36,7 @@ textarea#note {
   display: none;
   position: absolute;
   text-align:left;
-  font-size:40%;
+  font-size: 90%;
   width: 275px;
   /*top: 55px;*/
   left: 8px;
@@ -182,11 +182,13 @@ blockquote {
 
 a {
   text-decoration: none;
-  color: deepskyblue;
+  color: #f3f3f3;
+  left: 8px;
+  top: 15px;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .overlay {
