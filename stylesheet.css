@@ -35,10 +35,10 @@ textarea#note {
 #descr {
   display: none;
   position: absolute;
-  text-align:left;
+  text-align: left;
   font-size: 90%;
   width: 275px;
-  /*top: 55px;*/
+  padding-top: 65px;
   left: 8px;
   color: black;
 }
@@ -47,7 +47,7 @@ textarea#note {
   text-decoration: none;
   color: black;
   padding-left: 8px;
-  /*padding-top: 30px;*/
+  margin-top: 20px;
   font-size: 90%;
   float: left;
 }
