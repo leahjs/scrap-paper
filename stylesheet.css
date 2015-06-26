@@ -49,6 +49,7 @@ textarea#note {
   padding-left: 8px;
   padding-top: 30px;
   font-size: 90%;
+  float: left;
 }
 .about:hover {
   color: #blue;
